@@ -1,0 +1,577 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AJ Portfolio | Angelica Janine Reyes</title>
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              royal: '#434ee6',
+              royalDark: '#353dc2',
+              navy: '#1d3557',
+              periwinkle: '#c8d5fc',
+              iceBlue: '#f0f4fd',
+              softGray: '#f8fafc',
+              darkHeading: '#1e293b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: CustomStyles -->
+<style data-purpose="custom-styling">
+    .card-shadow {
+      box-shadow: 0 10px 25px -5px rgba(67, 78, 230, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+    .card-border-highlight {
+      border: 3px solid #3b82f6;
+    }
+    .hero-bg {
+      background-color: #c7d5fc;
+    }
+  </style>
+<!-- END: CustomStyles -->
+</head>
+<body class="bg-[#f2f6fe] text-slate-700 antialiased font-sans selection:bg-brand-royal selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="w-full bg-[#f2f6fe] sticky top-0 z-50 transition-all duration-200">
+<div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+<!-- Logo / Monogram placeholder or empty space as shown in screenshot -->
+<a class="text-xl font-bold tracking-tight text-brand-navy flex items-center gap-2" href="#home">
+<span class="w-8 h-8 rounded-full bg-brand-royal text-white flex items-center justify-center text-sm font-semibold">AJ</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="flex items-center space-x-8 text-sm font-semibold tracking-wide text-slate-700">
+<a class="hover:text-brand-royal transition-colors" href="#home">HOME</a>
+<a class="hover:text-brand-royal transition-colors" href="#about">ABOUT ME</a>
+<a class="hover:text-brand-royal transition-colors" href="#skills">SKILLS</a>
+<a class="bg-brand-royal hover:bg-brand-royalDark text-white px-6 py-2 rounded-full shadow-sm transition-all" href="#projects">Portfolio</a>
+<a class="hover:text-brand-royal transition-colors" href="#contact">CONTACT</a>
+</nav>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="w-full">
+<!-- BEGIN: HeroSection -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-14" data-purpose="hero-container" id="home">
+<div class="hero-bg rounded-2xl p-8 md:p-14 relative overflow-hidden shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Hero Text Details -->
+<div class="lg:col-span-8 flex flex-col items-start z-10">
+<h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-2">
+              Hi, I'm AJ
+            </h1>
+<p class="text-lg md:text-xl font-medium text-slate-800 mb-6">
+              Full Stack Web Developer
+            </p>
+<p class="text-slate-700 text-lg md:text-xl leading-relaxed max-w-2xl mb-8">
+              Crafting intuitive, fast, and scalable digital experiences with clean code and modern interface design. Focused on architecting delightful software from concept to deployment.
+            </p>
+<a class="inline-flex items-center justify-center bg-brand-royal hover:bg-brand-royalDark text-white text-base font-medium px-8 py-3 rounded-full transition-transform active:scale-95 shadow-md" href="#contact">
+              Hire Me
+            </a>
+</div>
+<!-- Hero Portrait Avatar -->
+<div class="lg:col-span-4 flex justify-center lg:justify-end z-10">
+<div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-white overflow-hidden shadow-lg bg-white flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4mPaHcLDRCOnhZryM7vjlz5lmU2Ucbi_yvy-4gOIQz32jCSZY_Uo0PHUOO7cC_V4QFylyVVhkbu_bDIyIzSXaAGGBVQWU2OaxZaZMr3bkeU5Re-62O7E6IqIQQchQ79p_Ni-X01XCw43jqrP3Q1APyZTHvbFkIRZ8-8xV1dhtMFiVH2Awn0urgnP131mhJvhyYAyRhFy1B2tB-ml-FvnyWOgM1KV0JFdYbFN6rq8iCQ6lklqmqtQp" alt="Angelica Janine Reyes portrait" class="w-full h-full object-cover rounded-full"></div>
+</div>
+</div>
+<!-- Hero Bottom Action Badges -->
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+<!-- Github link badge -->
+<a class="bg-white hover:bg-slate-50 transition-all rounded-xl p-4 flex items-center justify-between shadow-sm group" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-900">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path></svg>
+</div>
+<div>
+<p class="text-xs font-semibold text-slate-500 tracking-wide uppercase">Code Repositories</p>
+<p class="text-sm font-bold text-slate-800">GitHub</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<!-- LinkedIn link badge -->
+<a class="bg-white hover:bg-slate-50 transition-all rounded-xl p-4 flex items-center justify-between shadow-sm group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</div>
+<div>
+<p class="text-xs font-semibold text-slate-500 tracking-wide uppercase">Professional Network</p>
+<p class="text-sm font-bold text-slate-800">LinkedIn</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+<!-- Email direct inquiry badge -->
+<a class="bg-white hover:bg-slate-50 transition-all rounded-xl p-4 flex items-center justify-between shadow-sm group" href="#contact">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
+<svg class="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<div>
+<p class="text-xs font-semibold text-slate-500 tracking-wide uppercase">Direct Inquiries</p>
+<p class="text-sm font-bold text-slate-800">Email AJ</p>
+</div>
+</div>
+<svg class="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-16 bg-[#f2f6fe]" data-purpose="about-me-container" id="about">
+<div class="max-w-6xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+<!-- Circular avatar image from image 9 -->
+<div class="flex-shrink-0">
+<div class="w-56 h-56 md:w-64 md:h-64 rounded-full border-4 border-white shadow-md overflow-hidden bg-white flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4mPaHcLDRCOnhZryM7vjlz5lmU2Ucbi_yvy-4gOIQz32jCSZY_Uo0PHUOO7cC_V4QFylyVVhkbu_bDIyIzSXaAGGBVQWU2OaxZaZMr3bkeU5Re-62O7E6IqIQQchQ79p_Ni-X01XCw43jqrP3Q1APyZTHvbFkIRZ8-8xV1dhtMFiVH2Awn0urgnP131mhJvhyYAyRhFy1B2tB-ml-FvnyWOgM1KV0JFdYbFN6rq8iCQ6lklqmqtQp" alt="Angelica Janine Reyes" class="w-full h-full object-cover rounded-full"></div>
+</div>
+<!-- Biography Content -->
+<div class="flex-1 text-left">
+<h2 class="text-3xl md:text-4xl font-extrabold text-[#1d3b8a] tracking-tight mb-6">
+              Angelica Janine Reyes
+            </h2>
+<div class="space-y-4 text-slate-700 text-base md:text-lg leading-relaxed">
+<p class="">
+                I'm a curious and motivated learner with a background in Mathematics and Computer Science. I have an interest in technology, problem-solving, and web development.
+              </p>
+<p class="">
+                I am currently developing my skills in HTML, CSS, JavaScript, and Git, while exploring how to build clean, responsive, and user-friendly websites. I enjoy learning new technologies, working on projects, and turning ideas into practical digital experiences. My goal is to continuously improve my skills and grow as a web developer and technology professional.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: SkillsSection -->
+<section class="py-16 bg-[#f2f6fe]" data-purpose="skills-container" id="skills">
+<div class="max-w-5xl mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#1d3b8a] tracking-tight mb-12">
+          SKILLS
+        </h2>
+<!-- Using Now Category -->
+<div class="mb-12">
+<h3 class="text-2xl font-bold text-[#1d3b8a] mb-6">Using Now:</h3>
+<div class="flex flex-wrap items-center gap-6 sm:gap-10">
+<!-- Bootstrap logo -->
+<div class="w-16 h-16 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-3xl shadow-sm hover:scale-105 transition-transform" title="Bootstrap">
+              B
+            </div>
+<!-- CSS3 badge -->
+<div class="w-16 h-16 flex items-center justify-center bg-transparent hover:scale-105 transition-transform" title="CSS3">
+<div class="relative w-14 h-16 bg-blue-600 flex flex-col items-center justify-center text-white font-black text-xl [clip-path:polygon(0_0,100%_0,85%_100%,50%_90%,15%_100%)] shadow-sm">
+<span class="text-[9px] uppercase font-bold tracking-widest mt-1">CSS</span>
+<span class="text-2xl font-extrabold">3</span>
+</div>
+</div>
+<!-- Git logo -->
+<div class="w-16 h-16 flex items-center justify-center hover:scale-105 transition-transform" title="Git">
+<div class="w-12 h-12 bg-[#f05032] rotate-45 rounded-lg flex items-center justify-center shadow-sm">
+<div class="-rotate-45 w-6 h-6 border-2 border-white rounded-full flex items-center justify-center">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- HTML5 badge -->
+<div class="w-16 h-16 flex items-center justify-center bg-transparent hover:scale-105 transition-transform" title="HTML5">
+<div class="relative w-14 h-16 bg-orange-600 flex flex-col items-center justify-center text-white font-black text-xl [clip-path:polygon(0_0,100%_0,85%_100%,50%_90%,15%_100%)] shadow-sm">
+<span class="text-[9px] uppercase font-bold tracking-widest mt-1">HTML</span>
+<span class="text-2xl font-extrabold">5</span>
+</div>
+</div>
+<!-- Sublime text icon -->
+<div class="w-16 h-16 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center shadow-sm hover:scale-105 transition-transform" title="Sublime Text">
+<span class="text-orange-500 font-extrabold text-3xl italic tracking-tighter">S</span>
+</div>
+</div>
+</div>
+<!-- Learning Category -->
+<div>
+<h3 class="text-2xl font-bold text-[#1d3b8a] mb-6">Learning:</h3>
+<div class="flex flex-wrap items-center gap-6 sm:gap-10">
+<!-- JavaScript badge -->
+<div class="w-16 h-16 bg-yellow-400 text-black font-extrabold flex items-end justify-end p-2 text-2xl rounded-sm shadow-sm hover:scale-105 transition-transform" title="JavaScript">
+              JS
+            </div>
+<!-- MongoDB logo representation -->
+<div class="h-16 px-4 bg-white rounded-xl flex items-center gap-2 border border-slate-200 shadow-sm hover:scale-105 transition-transform" title="MongoDB">
+<span class="text-green-600 font-bold text-xl">🍃 MongoDB</span>
+</div>
+<!-- Python logo representation -->
+<div class="h-16 px-4 bg-white rounded-xl flex items-center gap-2 border border-slate-200 shadow-sm hover:scale-105 transition-transform" title="Python">
+<span class="text-[#306998] font-bold text-xl">🐍 python</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SkillsSection -->
+<!-- BEGIN: ProjectsSection -->
+<section class="py-16 bg-[#f2f6fe]" data-purpose="projects-showcase" id="projects"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+  <!-- Section Title & Description -->
+  <div class="text-center max-w-3xl mx-auto mb-10">
+    <h2 class="text-3xl md:text-5xl font-extrabold text-[#1d3b8a] tracking-tight mb-4">
+      Projects
+    </h2>
+    <p class="text-slate-700 text-base md:text-lg leading-relaxed">
+      Explore my projects showcasing my skills in web development, API documentation, UI/UX design, and application development. Each project represents an opportunity to learn, build, and apply new technologies.
+    </p>
+    
+    <!-- Responsive Category Filter Pills -->
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8">
+      <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-brand-royal text-white shadow-sm transition-all">
+        All Projects
+      </button>
+      <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-brand-royal border border-slate-200 shadow-sm transition-all hover:bg-slate-50">
+        APIs &amp; Backend
+      </button>
+      <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-brand-royal border border-slate-200 shadow-sm transition-all hover:bg-slate-50">
+        Full Stack
+      </button>
+      <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-brand-royal border border-slate-200 shadow-sm transition-all hover:bg-slate-50">
+        UI/UX &amp; Prototype
+      </button>
+      <button type="button" class="px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:text-brand-royal border border-slate-200 shadow-sm transition-all hover:bg-slate-50">
+        Capstone
+      </button>
+    </div>
+  </div>
+
+  <!-- First Row of Projects (3 Cards) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+    <!-- Project 1: E-commerce API Documentation -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+      <div class="h-52 sm:h-56 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+        <img alt="E-commerce API Documentation illustration" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4yXOBBjRxlAxFPsZ8lgBy9W1Uj_UylcgezFl6SyAB62i9CvbvANynMjZZ3_p5SBA4SlirFB5tuOT7ohWf0QgZpFZJhsCT_6ApQm0vqtvdVNzJ3Bzcx-t00b8XfNpUmBMxDhXbt6Qr3cv2sEuUvn68g6N-ygGo0A1u9wqAZWmuyCFM_B9xtAPlpp9qpMdBTrjyKucezsupUK62MCBGCxb51GXQAq12UevsDgJsnj9p7bnUYHXwHflCtiApTIAyK7Jyow">
+        <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+          API Docs
+        </span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+            E-commerce API Documentation
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Postman</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">REST API</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Backend</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Course Booking API Documentation (Highlighted) -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+      <div class="h-52 sm:h-56 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+        <img alt="Course Booking API Documentation preview" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4vNtVvBKa7pSnOBL2BS-azAKaRxLW848qVNhzN8aTu9zNybOpJKa9WZFTeTdMSEDjUdHJ4_GVYKx78Fha1SyCao44SZbFIBBdWjcYAeltB1oF9EWSETPu2XeMxFlT9xoJ0y9-TJI8Q6cLzDXLT9Ol3wWFMQzYllesPf9iJm_TuWSHR21RJhzoVEd13fXOgSV8sYkOuB2tnB4ykzvgc0RNwBpduuFcep_-f8NUkdrRDV7LIV1h3-mN5zrjXuM1HxjtEA">
+        <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+          API Docs
+        </span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+            Course Booking API Documentation
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Express</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Postman</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Authentication</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Course booking App -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+      <div class="h-52 sm:h-56 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+        <img alt="Course booking App interface illustration" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdWZ5itP93y0OW9skbxn0RsZSNP3L3aQD_jBAur9iNy986admm1vnQwjXGvv2UrCmQQLgXovGxMKyU3Wb_X9MqGFvOEyLfXDzJ5nSJErIxoq9OYnk2VkCRK39VugyVi7IimPni-GSk5Tz-dsDkIbniGxo_0CFv_Gl7tTAI7wqi_MbgktwWQOLTrd8Tum9uiJdbrGuCHcUNEr7EzpYY3dy6ZAyRWXJF4e61sK89ujnrviWOjUOGMVu_EVDkRhjlsfmQdw">
+        <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+          MERN App
+        </span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+            Course booking App
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">React</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Node.js</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">MongoDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row of Projects (3 Cards) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+    <!-- Project 4: E-commerce App -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+      <div class="h-52 sm:h-56 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+        <img alt="E-commerce App preview illustration" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJStqBD9w1x-Lfy5hUjOZUiB-YGt3eR852Ds9LdFUo9__cXDEnT0UWZfC-9oc3T2Zyyzh9B_pALxrmJ0Es46F6V0aF3RnJFyErKDnaRVoSQZAXd00wbk0y4s5VtFVd8tIO1c0v_uL64QX0yVbXhS0j2vAKJf6Y0N9TYKEySYq0CiXTOspwpuxZ0cYNFl1br98XSSaQDSFNibMmumsIfL9XyrHl9aE9IxNrSxYeKG7LwpWZhuGqelpVq69GpeEdTNk2dQ">
+        <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+          Full Stack
+        </span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+            E-commerce App
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">MERN Stack</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Admin Panel</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Analytics</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5: Airline Booking System Mockup -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+      <div class="h-52 sm:h-56 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+        <img alt="Airline Booking System Mockup preview" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjY2tvKdYOax0svJmdBfAhOTdnJjdXF9d7SlVdtikEe_lZD2MZdfFuxSGnUSbGz0VqHNJDorEAmq0TIfsdEm25KXNcW0BhCuGy8SKCUO_l0fDZ9_t1iBUIIT82PvQpXXtdA6MyvLUCYjccJynLSXRSJ_zdtlhA-sdUYxXk3VwZeYKhnP6MmELoLum1J4rJ8uM2QQ0hAqEXO9QaAPjLekRIT7wxiCLpSleF8-paWhqW8IMZ95GVOSWodOUwoueCabxGOA">
+        <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+          UI / UX Mockup
+        </span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+            Airline Booking System Mockup
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            MSide Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">UI / UX</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Wireframes</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Figma</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6: Airline Booking System Prototype -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+      <div class="h-52 sm:h-56 bg-slate-100 flex items-center justify-center overflow-hidden relative">
+        <img alt="Airline Booking System Prototype preview" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH0cJbZrj0AjAgFqZKPEgKjMa6CPxBwbRsp1hZPCih-bEOOgO6S-dZAjQ4SbNdvFZqEjYCktXo6W3rgrt6dK7eVh-ZovTCeqBypJZtKrZ90L3Gv21QkLUNaOYo2W4IzIfh5RX82Ef65cuJOrlfF_c2xYjEaojLZLF0FHWGuBWIksinztmOd2l8jBwN5ByJGD5qpJ9IYG3sirgSy3B-ZGu5phyI9vShG2DmDxxZyakBBKiULGBx9K7fi5rF4_0H_uuRJw">
+        <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+          Interactive Prototype
+        </span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+            Airline Booking System Prototype
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4">
+            MSide Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Prototype</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">User Flows</span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Interactive</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section: Short Courses Capstone -->
+  <div class="mt-8">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#1d3b8a] tracking-tight mb-8">
+      Short Courses Capstone
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <!-- Capstone 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+        <div class="h-52 sm:h-56 bg-slate-50 flex items-center justify-center overflow-hidden relative">
+          <img alt="Short Course Capstone project illustration 1" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw2QXRp05hdYdylGhpQVlf8qGtvM31BQOurxhfWRTkuOfw1VlFqT3XZGo9M1eP4iUEYgJ_lQW7J7igGeRws-mPfOVSrtRp5FasMalQcjHNUXKNZfH9oYFKuB6-uwa4GdA25uO4Dtaa09_oqfzK92EbW_lRmpzmqqsV3IUQEO8fkJXWRF66s6GdIP1menHJaIJyC9TdLtClwWcPrmt2kVu62MrAjspl5H8CJpucvCBIe6sDFms5E43HPQvzLAYwCAyoWA">
+          <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+            Capstone
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+              Short Course Capstone
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Placeholder for your short courses capstone project.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Web Dev</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Certification</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Capstone 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+        <div class="h-52 sm:h-56 bg-slate-50 flex items-center justify-center overflow-hidden relative">
+          <img alt="Short Course Capstone project illustration 2" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ikgWiGdPVIke5vDYm99oSbqXpQ_9WEEpNMc_aQ7HQpNM64pUpaFFsZrY-5UiwNacqLGBl3tE7bPQPPfMgkYB7s4ImaEyZoKj_knzW05i2IezGJovEsW8SeeRmbxi6aOB1F2DXBZAPh61qgmZtcDsi-e7jzG7BLJS3Yg9fZwmfqkP0OkC3l1HGzcJ7nfKlL7R4gGdDcy-66pb0c9I4uOvkXtmu0tKxaTVoHhJ5tgKSJ9h7DhkiMQ3foB81cG62j5Mnw">
+          <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+            Capstone
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+              Short Course Capstone
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Placeholder for your short courses capstone project.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Web Dev</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Certification</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Capstone 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all border border-slate-200 flex flex-col group">
+        <div class="h-52 sm:h-56 bg-slate-50 flex items-center justify-center overflow-hidden relative">
+          <img alt="Short Course Capstone project illustration 3" class="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMJmW9_MsUqIqTyvYLIXeudh6imiw9wUQ7wM2KV_TT2-vTKYafhKg7Sz1USSb114Uofm9Jkl4U11LXcVV6UEsxm64-wo-EEjYerv9CIz_xhw3LV6LiNCj-yGRHbsOfe9MRyqbPvNtJopBGXAXjj6_5tByAcYJw51_72snOjTrV3yqs6GRvtMODYbqAoCGkIP_Ym6u3WIEewNLUumx6IkTxcUv_QJ6lIHl6us0hJqfOCPaL0fk0gMr2tirPKyCgHHC4fA">
+          <span class="absolute top-3 left-3 bg-white/95 text-slate-800 text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+            Capstone
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold text-[#1d3b8a] mb-3 group-hover:text-blue-600 transition-colors">
+              Short Course Capstone
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              Placeholder for your short courses capstone project.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Web Dev</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">Certification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: ContactSection -->
+<section class="py-20 bg-[#f2f6fe]" data-purpose="contact-container" id="contact">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Stay Connected -->
+<div class="lg:col-span-4 flex flex-col items-start space-y-6">
+<!-- Small round avatar -->
+<div class="w-32 h-32 rounded-full border-4 border-white shadow-md overflow-hidden bg-white flex items-center justify-center"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4mPaHcLDRCOnhZryM7vjlz5lmU2Ucbi_yvy-4gOIQz32jCSZY_Uo0PHUOO7cC_V4QFylyVVhkbu_bDIyIzSXaAGGBVQWU2OaxZaZMr3bkeU5Re-62O7E6IqIQQchQ79p_Ni-X01XCw43jqrP3Q1APyZTHvbFkIRZ8-8xV1dhtMFiVH2Awn0urgnP131mhJvhyYAyRhFy1B2tB-ml-FvnyWOgM1KV0JFdYbFN6rq8iCQ6lklqmqtQp" alt="AJ portrait avatar" class="w-full h-full object-cover rounded-full"></div>
+<div>
+<p class="text-sm font-bold tracking-widest text-slate-800 uppercase mb-1">
+                STAY CONNECTED
+              </p>
+<h3 class="text-xl font-bold text-slate-900 mb-6">
+                Let's work Together!
+              </h3>
+<div class="space-y-2 text-slate-700 font-medium">
+<p class="">Call Me: <a class="hover:text-brand-royal transition-colors" href="tel:+639271345656">+639271345656</a></p>
+<p class="">Email: <a class="hover:text-brand-royal transition-colors" href="mailto:ajaaaang13@gmail.com">ajaaaang13@gmail.com</a></p>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-8">
+<h2 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-2">
+              Contact Me
+            </h2>
+<p class="text-slate-700 text-base mb-8">
+              Have a project in mind? Let's work together! I'd love to hear from you!
+            </p>
+<form action="#" class="space-y-6" method="POST" onsubmit="event.preventDefault(); alert('Message sent!');">
+<!-- Name and Email Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-slate-800 mb-1" for="name">Name</label>
+<input class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" id="name" name="name" placeholder="Your Name" required="" type="text">
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-800 mb-1" for="email">Email</label>
+<input class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" id="email" name="email" placeholder="Email" required="" type="email">
+</div>
+</div>
+<!-- Number and Company Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-slate-800 mb-1" for="number">Number</label>
+<input class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" id="number" name="number" placeholder="Mobile Number" type="tel">
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-800 mb-1" for="company">Company</label>
+<input class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none" id="company" name="company" placeholder="Company" type="text">
+</div>
+</div>
+<!-- Message Textarea -->
+<div>
+<label class="block text-sm font-bold text-slate-800 mb-1" for="message">Message</label>
+<textarea class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 placeholder-slate-400 focus:border-brand-royal focus:ring-1 focus:ring-brand-royal outline-none resize-y" id="message" name="message" placeholder="Message" required="" rows="5"></textarea>
+</div>
+<!-- Submit button -->
+<div class="flex justify-end pt-2">
+<button class="bg-black hover:bg-slate-800 text-white font-semibold px-8 py-3 rounded-full transition-all active:scale-95 shadow-md" type="submit">
+                  Submit
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ContactSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#1f4fe4] text-white py-8" data-purpose="site-footer">
+<div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+<p class="text-sm font-medium tracking-wide">
+        2026 AJ Portfolio | All rights reserved.
+      </p>
+<!-- Footer Nav Links -->
+<nav class="flex items-center justify-center space-x-6 text-sm font-medium">
+<a class="hover:underline" href="#home">Home</a>
+<a class="hover:underline" href="#about">About Me</a>
+<a class="hover:underline" href="#skills">Skills</a>
+<a class="hover:underline" href="#projects">Portfolio</a>
+</nav>
+</div>
+</footer>
+<!-- END: MainFooter -->
+
+
+</body></html>
